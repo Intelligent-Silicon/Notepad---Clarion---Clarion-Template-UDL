@@ -1,6 +1,9 @@
 # Notepad++ Clarion & Clarion Template UDL
 
 
+## TLDR
+
+[XML File for importing in NPP.](
 \#! Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
 
 \#! Altering the order of the <Keywords> could alter the parsing order. Try it!
