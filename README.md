@@ -21,11 +21,26 @@ Operators & Delimiters: Operators 1 Style - Does not need whitepsace around the 
 
 Operators & Delimiters: Operators 2 Style - Needs whitepsace around the symbol.
 
-Keywords Lists: Group Prefix Mode - Match anything that starts with.
-
-A keyword can only be in one Keywords Lists:group style or Folder & Default:Folding code group style.
+Keywords Lists: Group Prefix Mode - Match anything that starts with the keyword.
 
 Keywords can only be used once - A keyword can only be in one Keywords Lists:group style or Folder & Default:Folding code group style.
+
+Comment & number:
+Decimal Seperator: Both
+
+Prefix 1 & Suffix 2 (first and last) group only used with decimal digits
+
+Prefix 2 works with/can be extended with Extras 1
+
+Extras 2 works with/can be extended with Suffix 1
+
+eg 
+
+[Prefix1][Decimals][Suffix2]
+
+[Prefix2][Extras1] and [Extras2][Suffix1]
+
+
 
 For backgrounds to work with White Mode and Dark Mode, the background needs to be Black & Transparent ticked.
 
