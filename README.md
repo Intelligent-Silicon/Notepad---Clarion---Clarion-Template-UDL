@@ -7,7 +7,7 @@
 
 Notepad ++, Language, User Defined Language, Define your Language, Import, Select the above XML file.
 
-### Summary of Rules
+## Summary of Rules
 Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
 
 Ignore Case should be ticked (next to Export). Clarion is not case sensitive.
