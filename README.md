@@ -152,7 +152,10 @@ public null true false priority toolbar
 
 ### 3rd Group - Pink
 Prefix mode = Ticked
-These are the Clarion picture tokens. See Comment & Number below for more info.
+
+These are the Clarion picture tokens.
+
+See Comment & Number below for more info.
 ```
 @s @d @n @e @t
 ```
@@ -264,11 +267,13 @@ This treats everything inside the Apostrophe's as a string and colours
 accordingly.
 
 Delimiter 1 style - Light Green 
+
 Open: 
 ```
 '
 ```
 Escape:
+
 Close: 
 ```
 '
