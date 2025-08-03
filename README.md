@@ -25,6 +25,8 @@ Keywords Lists: Group Prefix Mode - Match anything that starts with the keyword.
 
 Keywords can only be used once - A keyword can only be in one Keywords Lists:group style or Folder & Default:Folding code group style.
 
+Where a keyword exists which is extended, the smallest keyword needs to be last to be parsed last, eg \#AtStart \#AtEnd \#At or \#EndCase and \#End or \#EndIF and \#End
+
 Comment & number:
 Decimal Seperator: Both
 
@@ -64,226 +66,23 @@ Default style - Orange except for keywords
 
 All Default Style Sample Text is in Orange
 
-Folding in code 1 Style - Pale Yellow
-
+### Folding in code 1 Style - Pale Yellow
 Template Code Folders - folding on \#Function and its \#End equivalent
 
-Open:
-\#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
+Open: \#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
 
-Close:
-\#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
+Close: \#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
 
-\#IF('This Wraps all of them together')
-
-\#Case(%Symbol[%Cnt])            \#Open: \#Case
-
-\#OF(%Symbol) \#OROF(%Symbol)
-
-\#!
-
-\#OF(%Symbol)
-
-\#!
-
-\#Else
-
-\#!
-
-\#EndCase                        Close: \#EndCase
-
-\#Boxed
-
-\#!
-
-\#EndBoxed
-
-\#Button
-\#!
-\#EndButton
-
-\#Context
-\#!
-\#EndContext
-
-\#Default
-\#!
-\#EndDefault
-
-\#Enable
-\#!
-\#EndEnable
-
-\#Field
-\#!
-\#EndField
-
-\#GlobalData
-\#!
-\#EndGlobalData
-
-\#LocalData
-\#!
-\#EndLocalData
-
-\#Loop
-\#!
-\#EndLoop
-
-\#Reports
-\#!
-\#EndReports
-
-\#Restrict
-\#!
-\#EndRestrict
-
-\#Section
-\#!
-\#EndSection
-
-\#Sheet
-\#!
-\#EndSheet
-
-\#Tab
-\#!
-\#EndTab
-
-\#Windows
-\#!
-\#EndWindows
-
-\#With
-\#!
-\#EndWith
-
-\#AtStart
-\#!
-\#EndAt
-
-\#AtEnd
-\#!
-\#EndAt
-
-\#At
-\#!
-\#EndAt
-
-\#Case
-\#OF(%symbol)
-\#!
-\#OROF(%symbol)
-\#!
-\#Else
-\#!
-\#EndCase
-
-\#Case
-\#OF(%symbol)
-\#!
-\#OROF(%symbol)
-\#!
-\#Else
-\#!
-\#End
-
-\#IF(%Symbol)
-\#!
-\#ElsIF(%Symbol)
-\#!
-\#Else
-\#!
-\#EndIF
-
-\#IF(%Symbol)
-\#!
-\#ElsIF(%Symbol)
-\#!
-\#Else
-\#!
-\#End
-
-\#For(%Symbol)
-\#!
-\#EndFor
-
-\#For(%Symbol)
-\#!
-\#End
-
-\#Loop,times
-\#!
-\#EndLoop
-
-\#Loop,times(9)
-\#!
-\#End
-
-\#Loop,until(%Symbol = %true)
-\#!
-\#Endloop
-
-\#Loop,for(%cnt,%start,%end),by(%step)
-\#!
-\#Endloop
-
-
-\#Create(%file)
-\#!
-\#Close
-
-\#Open(%File),Read
-\#!
-\#Close
-
-\#EndIF End of the IF Wrap
-
-
+### Folding in code 1 Style - Pale Yellow
 Folding in code 1 Style - Pale Yellow
-\#If(%True)                      Open: \#If
-If Example
-\#Else
-Else
-\#EndIF                          Close: \#EndIf
+If you want to fold on the \#Else add it to Middle but this will stop you from folding the entire \#IF \#EndIF structure.
+Its a personal choice if this is used or not. This UDL does not use it, but this is how you would do it.
 
-Folding in code 1 Style - Pale Yellow
-If you want to fold on the \#Else add it to Middle but this
-will stop you from folding the entire \#IF \#EndIF structure.
-Its a personal choice if this is used or not.
-This UDL does not use it.
-\#If(%True)                      Open: \#If
-If Example
-\#Else                           Middle: \#Else
-Else
-\#EndIF                          Close: \#EndIf
+Open: \#If
 
-Folding in code 1 Style - Pale Yellow
-\#Loop                           Open: \#Loop
-    \#IF(%Condition = %True)
-        \#Break
-    \#EndIF
-\#EndLoop                        Close: \#EndLoop
+Middle: \#Else
 
-Folding in code 1 Style - Pale Yellow
-\#Sheet                          Open: \#Sheet
-\#!
-\#EndSheet                       Close: \#EndSheet
-
-Folding in code 1 Style - Pale Yellow
-\#Tab                            Open: \#Tab
-\#!
-\#EndTab                         Close: \#EndTab
-
-Folding in code 1 Style - Pale Yellow
-\#Prepare                        Open: \#Prepare
-\#!
-\#EndPrepare                     Close: \#EndPrepare
-
-Folding in code 1 Style - Pale Yellow
-\#Button                         Open: \#Button
-\#!
-\#EndButton                      Close: \#EndButton
+Close: \#EndIf
 
 
 In this example there are 3 template keywords: \#AtStart, \#AtEnd & \#At
