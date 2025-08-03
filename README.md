@@ -1,49 +1,79 @@
-\# Notepad++ Clarion & Clarion Template UDL
+# Notepad++ Clarion & Clarion Template UDL
 
 
 \#! Rule parsing takes place in order of the XML <Keywords> in the <KeywordList>.
+
 \#! Altering the order of the <Keywords> could alter the parsing order. Try it!
+
 \#! Ignore Case should be ticked (next to Export).
+
 \#! Code 1 Style - Does not need whitespace around the symbol or keyword.
+
 \#! Code 2 Style - Needs whitepace around the the symbol or keyword.
+
 \#! Operators 1 Style - Does not need whitepsace around the symbol
+
 \#! Operators 2 Style -Needs whitepsace around the symbol.
+
 \#! Prefix Mode - Match anything that starts with.
+
 \#! Keywords can only be in one Keyword style group or Folder style group.
+
 \#! Keywords can only be used once.
+
 \#! For backgrounds to work with White Mode and Dark Mode, the background needs to be Transparent.
+
 \#! If you see a keyword with two colours, this indicates there is a mismatch
 \#! in the parsing. Identify the rules and rehash them. 
+
 \#! eg \#AtStart where At is one colour, and Start is another
+
 \#! eg \#EndIF where End is one colour and IF is another.
+
 \#! NPP Tokens - ((EOL)) ((WHITESPACE))
 
 \#! Folder & Default tab
+
 \#! Code 1 Style - Does not need whitespace around the symbol or keyword.
+
 \#! Code 2 Style - Needs whitepace around the the symbol or keyword.
 
 \#! Default style - Orange except for keywords
+
 All Default Style Sample Text is in Orange
 
 \#! Folding in code 1 Style - Pale Yellow
+
 \#! Template Code Folders - folding on \#Function and its \#End equivalent
+
 \#!
+
 \#! Open:  \#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
+
 \#! Close: \#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
 
 \#IF('This Wraps all of them together')
 
 \#Case(%Symbol[%Cnt])            \#! \#Open: \#Case
+
 \#OF(%Symbol) \#OROF(%Symbol)
+
 \#!
+
 \#OF(%Symbol)
+
 \#!
+
 \#Else
+
 \#!
+
 \#EndCase                        \#! Close: \#EndCase
 
 \#Boxed
+
 \#!
+
 \#EndBoxed
 
 \#Button
