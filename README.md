@@ -38,7 +38,7 @@ NPP Tokens - ((EOL)) ((WHITESPACE))
 
 
 
-### Folder & Default tab
+## Folder & Default tab
 
 Code 1 Style - Does not need whitespace around the symbol or keyword.
 
