@@ -73,8 +73,6 @@ Open: \#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field    
 
 Close: \#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
 
-### Folding in code 1 Style - Pale Yellow
-Folding in code 1 Style - Pale Yellow
 If you want to fold on the \#Else add it to Middle but this will stop you from folding the entire \#IF \#EndIF structure.
 Its a personal choice if this is used or not. This UDL does not use it, but this is how you would do it.
 
