@@ -1,7 +1,7 @@
 # Notepad++ Clarion & Clarion Template UDL
 
 
-\#! Rule parsing takes place in order of the XML <Keywords> in the <KeywordList>.
+\#! Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
 
 \#! Altering the order of the <Keywords> could alter the parsing order. Try it!
 
