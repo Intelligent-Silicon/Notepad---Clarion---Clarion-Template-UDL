@@ -1,4 +1,4 @@
-# Notepad++ Clarion & Clarion Template UDL
+# Notepad++ Clarion Template UDL
 
 
 ![Screenshot](https://github.com/Intelligent-Silicon/Notepad---Clarion---Clarion-Template-UDL/blob/main/TemplateExample1.png)
