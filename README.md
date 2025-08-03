@@ -162,149 +162,113 @@ with a letter, this enforces that rule.
 ```
 
 
-This colours all Template symbols not listed in the Folders
-8th Group - Pale Mauve
+### 8th Group - Pale Mauve
 Prefix mode = Ticked
-You could probably get away with just the %, but as all \#Symbols have to start
+You could probably get away with just the %, but as all %Symbols have to start
 with a letter, this enforces that rule.
-
+```
 %a %b %c %d %e %f %g %h %i %j %k %l %m %n %o %p %q %r %s %t %u %v %w %x %y
+```
 
-%a %b %c %d %e %f %g %h %i %j %k %l %m %n %o %p %q %r %s %t %u %v %w %x %y
-
-Comment & Number
+## Comment & Number
 Line comment position : Allow anywhere
+
 Allow folding of comments: Ticked
-\#!
-Comment line style
-Open: \#<!
-Continue character:
-Close: \#<!
+
+Decimal Seperator: Both
+
+### Comment line style - Lime Green
+Open: 
+```
+\#! \#<!
+```
+Continue character: <blank>
+
+Close: 
+```
+\#! \#<!
+```
 
 This is a comment
 \#<! This is also a comment starting in what ever column specified in \#Comment(50)
 
-Number Style - Pink
-Use lower case letters, create an Upper case and lower case example, and 
-toggle the Ignore Case tick box. If the rules are correct the Upper case
-example will use the Default style orange.
-\#!
-Prefix 1 & Suffix 2 (first and last) only used with decimal digits
-Prefix 2 works with/can be extended with Extras 1
-Extras 2 works with/can be extended with Suffix 1
-eg Prefix 2 & Extras 1 and Extras 2 & Suffix 1
+### Number Style - Pink
+Use lower case letter.
+
+Prefix 1 & Suffix 2 (first and last) only used with decimal digits.
+
+Prefix 2 works with/can be extended with Extras 1.
+
+Extras 2 works with/can be extended with Suffix 1.
+
 Decimal Seperator: Both
 
 
-hexadecimal -  0-9 and A-F.
-Extras 2: a b c d e f
-Suffix 1: h 
-\#Equate(0cd1f74fh)
-\#Equate(-0cd1f74fh)
-\#Equate(0CD1F74FH)      This works if Ignore Case is ticked or 
-\#Equate(-0CD1F74FH)     capital H is added to suffix 1
+### hexadecimal -  0-9 and A-F.
+Extras 2: 
+```
+a b c d e f
+```
+Suffix 1: 
+```
+h
+```
 
-binary - 0 or 1
-Suffix 1: b
-\#Equate(1000110b)
-\#Equate(-1000110b)
-\#Equate(1000110B)       This works if Ignore Case is ticked or
-\#Equate(-1000110B)      capital B is added to suffix 1
+### binary - 0 or 1
+Suffix 1: 
+```
+b
+```
 
-Octal 0 to 7 
-Suffix 1: o
-\#Equate(7041312o)
-\#Equate(-7041312o)
-\#Equate(7041312O)       This works if Ignore Case is ticked or
-\#Equate(-7041312O)      capital O is added to suffix 1
+### Octal 0 to 7 
+Suffix 1: 
+```
+o
+```
 
-Clarion Pictures - Pink
+### Clarion Pictures - Pink
 Keywords List 
 3rd group: - Pink
 Prefix mode = Ticked
-Clarion picture token prefix and currency symbols 
+Clarion picture token prefix and currency symbols
+``` 
 @s @d @n @e @t £ $ € de fr hk$ د.إ
-\#PROMPT('Prompt Text',@s255),%Symbol,At(10),Default(%True)
+```
 
-\#PROMPT('Prompt Text',@d1),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@d1>40),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@d01>40),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@d01.),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@d01-),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@d01_),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@d01`),%Symbol,At(10),Default(%True)
-
-\#PROMPT('Prompt Text',@n09),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@n13.2),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@n~£~13.2),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@n~£~-13.2),%Symbol,At(10),Default(%True)
-
-\#PROMPT('Prompt Text',@E9.0),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@e12.1),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@E12.1b),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@e12.1),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@E12.1),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@e15_.4),%Symbol,At(10),Default(%True)
-
-\#PROMPT('Prompt Text',@t1),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@t01),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@t01.),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@t01-),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@t01_),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@t01`),%Symbol,At(10),Default(%True)
-
-Clarion Pictures - Pink
+### Clarion Pictures - Pink
 Operators & Delimiters
 Delimiter 3 - Pink
-Open: @p @k
-Close: p k
+Open: 
+```
+@p @k
+```
+Close: 
+```
+p k
+```
 
-\#PROMPT('Prompt Text',@p\#\#\#-\#\#-\#\#\#\#p),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @P<\#/\#\#/\#\#P ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @p(\#\#\#)\#\#\#-\#\#\#\#p),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@P\#\#\#/\#\#\#-\#\#\#\#Pb ),%Symbol,At(10),Default(%True) Trips up here
-\#PROMPT('Prompt Text',@p<\#:\#\#PMp ),%Symbol,At(10),Default(%True)   Trips up here
-\#PROMPT('Prompt Text', @P<\#' <\#"P ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @P<\#lb. <\#oz.P ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @P4\#\#A-\#P ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@PA\#\#.C\#P),%Symbol,At(10),Default(%True)
-
-\#PROMPT('Prompt Text',@K\#\#\#-\#\#-\#\#\#\#K),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @K\#\#\#\#\#|-\#\#\#\#K ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @K(\#\#\#)@@@-\#\#\@\#\#K),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@K\#\#\#/?\#\#-\#\#\#\#K ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@k<\#:\#\#^Mk),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text', @K<\#' <\#"K ),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@K4\#_\#A-\#K ),%Symbol,At(10),Default(%True)
-
-
-
-
-
-
-Operators & Delimiters 
+## Operators & Delimiters 
 These must be spaced apart otherwise they are treated as a dual or more 
 character string eg @\#. This is so that RegEx characters can be "escaped code".
-\#!
-Operators 1 - Pastel Blue BOLD
-( [ { } ] ) & , | ~ = < > + - / *
-&<>~!@^*-+=|\\#/{}[]:;" ,	.?
 
-( [ { } ] ) & , | ~ = < > + - / *
+Operators 1 - Pastel Blue BOLD
+```
+( [ { } ] ) & , | ~ = < > + - / * : ; ?
+```
 
 This treats everything inside the Apostrophe's as a string and colours
 accordingly.
 
 Delimiter 1 style - Light Green 
-Open: '
+Open: 
+```
+'
+```
 Escape:
-Close: '
-
-'Prompt Text' and 'Some Text Here' demonstrate this.
-
-\#PROMPT('Prompt Text',@p\#\#\#-\#\#-\#\#\#\#p),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',@s255),%Symbol,At(10),Default('Some Text Here')
-
+Close: 
+```
+'
+```
 
 
 
