@@ -3,7 +3,7 @@
 
 ## TLDR
 
-[XML File for importing in NPP.](Clarion%20NPP%20UDL.xml)
+[Clarion Language and Clarion Template Language UDL XML File for importing in NPP.](Clarion%20NPP%20UDL.xml)
 
 Notepad ++, Language, User Defined Language, Define your Language, Import, Select the above XML file.
 
