@@ -68,11 +68,11 @@ Folding in code 1 Style - Pale Yellow
 
 Template Code Folders - folding on \#Function and its \#End equivalent
 
-\#!
+Open:
+\#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
 
-Open:  \#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
-
-Close: \#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
+Close:
+\#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
 
 \#IF('This Wraps all of them together')
 
