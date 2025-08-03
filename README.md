@@ -6,6 +6,7 @@
 [Clarion Language and Clarion Template Language UDL XML File for importing in NPP.](Clarion%20NPP%20UDL.xml)
 
 Notepad ++, Language, User Defined Language, Define your Language, Import, Select the above XML file.
+After the 'Import Successful' message appears, select 'Clarion' from the dropdown list box.
 
 ## Summary of Rules
 Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
