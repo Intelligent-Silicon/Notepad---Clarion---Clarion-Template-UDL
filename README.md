@@ -3,7 +3,8 @@
 
 ## TLDR
 
-[XML File for importing in NPP.](
+[XML File for importing in NPP.](Clarion%20NPP%20UDL.xml)
+
 \#! Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
 
 \#! Altering the order of the <Keywords> could alter the parsing order. Try it!
