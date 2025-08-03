@@ -7,7 +7,7 @@
 
 ## TLDR
 
-[Clarion Language and Clarion Template Language UDL XML File for importing in NPP.](Clarion-Template-and-Language-UDL.xml)
+[Clarion Template Language UDL XML File for importing in NPP.](Clarion-Template-Language-UDL.xml)
 
 Notepad ++, Language, User Defined Language, Define your Language, Import, Select the above XML file.
 After the 'Import Successful' message appears, select 'Clarion' from the dropdown list box.
@@ -76,6 +76,11 @@ Template Code Folders - folding on \#Function and its \#End equivalent
 Open: 
 ```
 \#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
+```
+
+Middle:
+```
+#group
 ```
 
 Close: 
