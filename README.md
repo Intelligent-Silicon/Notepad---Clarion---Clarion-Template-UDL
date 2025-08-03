@@ -93,7 +93,7 @@ Middle: \#Else
 Close: \#EndIf
 
 
-Where longer variations of a keyword exist, eg. \#AtStart, \#AtEnd & \#At, the \#At needs to be last because so that the longer versions can be parsed 
+Where longer variations of a keyword exist, eg. \#AtStart, \#AtEnd & \#At, the \#At needs to be last so that the longer versions can be parsed 
 and coloured first. If \#At is encountered first, the Start and End of \#AtStart and \#AtEnd will be coloured in the Default style colour.
 In the case of \#EndIF \#EndCase \#EndFor and \#End, the \#End needs to be last.
 
