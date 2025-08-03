@@ -5,36 +5,39 @@
 
 [XML File for importing in NPP.](Clarion%20NPP%20UDL.xml)
 
-\#! Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
+Notepad ++, Language, User Defined Language, Define your Language, Import, Select the above XML file.
 
-\#! Altering the order of the <Keywords> could alter the parsing order. Try it!
+### Summary of Rules
+Rule parsing takes place in order of the XML \<Keywords> in the \<KeywordList>.
 
-\#! Ignore Case should be ticked (next to Export).
+Altering the order of the <Keywords> could alter the parsing order. Try it!
 
-\#! Code 1 Style - Does not need whitespace around the symbol or keyword.
+Ignore Case should be ticked (next to Export).
 
-\#! Code 2 Style - Needs whitepace around the the symbol or keyword.
+Code 1 Style - Does not need whitespace around the symbol or keyword.
 
-\#! Operators 1 Style - Does not need whitepsace around the symbol
+Code 2 Style - Needs whitepace around the the symbol or keyword.
 
-\#! Operators 2 Style -Needs whitepsace around the symbol.
+Operators 1 Style - Does not need whitepsace around the symbol
 
-\#! Prefix Mode - Match anything that starts with.
+Operators 2 Style -Needs whitepsace around the symbol.
 
-\#! Keywords can only be in one Keyword style group or Folder style group.
+Prefix Mode - Match anything that starts with.
 
-\#! Keywords can only be used once.
+Keywords can only be in one Keyword style group or Folder style group.
 
-\#! For backgrounds to work with White Mode and Dark Mode, the background needs to be Transparent.
+Keywords can only be used once.
 
-\#! If you see a keyword with two colours, this indicates there is a mismatch
-\#! in the parsing. Identify the rules and rehash them. 
+For backgrounds to work with White Mode and Dark Mode, the background needs to be Transparent.
 
-\#! eg \#AtStart where At is one colour, and Start is another
+If you see a keyword with two colours, this indicates there is a mismatch
+in the parsing. Identify the rules and rehash them. 
 
-\#! eg \#EndIF where End is one colour and IF is another.
+eg \#AtStart where At is one colour, and Start is another
 
-\#! NPP Tokens - ((EOL)) ((WHITESPACE))
+eg \#EndIF where End is one colour and IF is another.
+
+NPP Tokens - ((EOL)) ((WHITESPACE))
 
 \#! Folder & Default tab
 
