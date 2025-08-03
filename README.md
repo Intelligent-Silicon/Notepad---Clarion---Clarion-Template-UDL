@@ -236,8 +236,11 @@ o
 
 ### Clarion Pictures - Pink
 Keywords List 
+
 3rd group: - Pink
+
 Prefix mode = Ticked
+
 Clarion picture token prefix and currency symbols
 ``` 
 @s @d @n @e @t £ $ € de fr hk$ د.إ
@@ -245,7 +248,9 @@ Clarion picture token prefix and currency symbols
 
 ### Clarion Pictures - Pink
 Operators & Delimiters
+
 Delimiter 3 - Pink
+
 Open: 
 ```
 @p @k
