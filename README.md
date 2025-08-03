@@ -69,9 +69,15 @@ All Default Style Sample Text is in Orange
 ### Folding in code 1 Style - Pale Yellow
 Template Code Folders - folding on \#Function and its \#End equivalent
 
-Open: \#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
+Open: 
+```
+\#Boxed    \#Button     \#Context    \#Default    \#Enable     \#Field      \#GlobalData     \#LocalData      \#Loop       \#Prepare    \#Reports    \#Restrict       \#Section    \#Sheet      \#Tab    \#Windows    \#With       \#AtStart \#AtEnd \#At \#Case       \#IF     \#For    \#Loop       \#Create \#Open
+```
 
-Close: \#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
+Close: 
+```
+\#EndBoxed \#EndButton  \#EndContext \#EndDefault \#EndEnable  \#EndField   \#EndGlobalData  \#EndLocalData   \#EndLoop    \#EndPrepare \#EndReports \#EndRestrict    \#EndSection \#EndSheet   \#EndTab \#EndWindows \#EndWith    \#EndAt              \#EndCase    \#EndIF  \#EndFor \#EndLoop    \#Close          \#End
+```
 
 If you want to fold on the \#Else add it to Middle but this will stop you from folding the entire \#IF \#EndIF structure.
 Its a personal choice if this is used or not. This UDL does not use it, but this is how you would do it.
@@ -83,66 +89,24 @@ Middle: \#Else
 Close: \#EndIf
 
 
-In this example there are 3 template keywords: \#AtStart, \#AtEnd & \#At
-The \#At needs to be last because so that the longer versions can be parsed 
-and coloured first. If \#At is encountered first, the Start and End of \#AtStart 
-and \#AtEnd will be coloured in the Default style colour.
+Where longer variations of a keyword exist, eg. \#AtStart, \#AtEnd & \#At, the \#At needs to be last because so that the longer versions can be parsed 
+and coloured first. If \#At is encountered first, the Start and End of \#AtStart and \#AtEnd will be coloured in the Default style colour.
+In the case of \#EndIF \#EndCase \#EndFor and \#End, the \#End needs to be last.
 
-
-Folding in code 1 Style - Pale Yellow
-\#AtStart                        Open: \#AtStart
-\#!
-\#EndAt                          Close: \#EndAt - Only list this once 
-
-Folding in code 1 Style - Pale Yellow
-\#AtEnd                          Open: \#AtEnd - Default Style bug colours 'END'
-\#!
-\#EndAt                          Close: \#EndAt - Only list this once
-
-Folding in code 1 Style - Pale Yellow
-\#At                             Open: \#At
-\#!
-\#EndAt                          Close: \#EndAt
-
-
-In this example there two template keywords: \#EndIF \#EndCase \#EndFor and \#End.
-Like the \#AT example above, the shortest word needs to be last, so \#End 
-always needs to be last otherwise the IF in \#EndIf will be coloured by the 
-default style. Add the \#End to the front of the Close: box to see the 
-wrong colouring.
- 
-\#If                             Open: \#IF
-\#!
-\#EndIF                          Close: \#EndIF
-
-\#If                             Open: \#If
-\#!
-\#End                            Close: \#End
-
-Keyword Lists
+## Keyword Lists
 Prefix Mode - Match anything that starts with.
 This colours all Template commands not listed in the Folders
 
-Like the examples above with \#At and \#End, the smallest keywords with Prefix
-mode switched on for the case of \# and %, need to be last.
-This way individual keywords coloured differently in the first groups are
-parsed accordingly.
-eg if \#Accept is in a keyword group before \# which is in the 7th Group, and
-they have different colours, the \#Accept will show the correct colour and
-so will all other words prefixed with \#
+Like the examples above with \#At and \#End, the smallest keywords with Prefix mode switched ON like in the of \# and %, these need to be in the last groups.
+This way individual keywords coloured differently in the first groups are parsed first and accordingly.
 
-1st Group - Turquoise
-Colour the CHECK in this prompt, add the word CHECK to one of the groups
-and colour accordingly. It will colour the word Check in the \#Prompt below.
-If you see a keyword with two colours, this indicates there is a mismatch
-in the parsing. Identify the rules and rehash them.
-\#!
-Largest words first, eg FileExists before File
-\#!
-Template \#Prompt/\#Set Keywords:
-Taken from the Clarion 11 XML 
-SoftVelocity.Generator.Resources.ClarionTemplate-Mode.xshd
+### 1st Group - Turquoise
+Clarion words used with templates or in the main language or with Classes.
 
+Taken from the Clarion 11 SoftVelocity.Generator.Resources.ClarionTemplate-Mode.xshd
+
+Add these words to the 1st Group. 
+``` clarion
 check color component control drop edit embed embedbutton expr field 
 format from icon key keycode opendialog optfield option picture procedure 
 radio savedialog spin text whenaccepted req default call extract exists 
@@ -175,36 +139,28 @@ target thous thread tiled timer tip together toolbox trn up upr use value
 vertical vcr virtual vscroll wallpaper width withnext withprior wizard wrap 
 zoom double separator pageno rtf system type autodispose internal netclass 
 public null true false priority toolbar
+```
 
-\#PROMPT('Prompt Text',CHECK),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',Procedure),%Symbol,At(10),Default(%false)
-\#PROMPT('Prompt Text',Option),%Symbol,At(10),Default(1)
-\#PROMPT('Prompt Text',Radio),%Symbol,At(10),Default(0),WhenAccepted(%grpDoSomething())
-\#Validate(%grpDoSomething,%param1, %param2,'Message to display when False')
+### 2nd Group - Lime Green
+```
+%true %false 
+```
 
-
-2nd Group - Lime Green
-%true %false am pm
-
-\#PROMPT('Prompt Text',CHECK),%Symbol,At(10),Default(%True)
-\#PROMPT('Prompt Text',Procedure),%Symbol,At(10),Default(%False)
-\#PROMPT('Prompt Text',CHECK),%Symbol,At(10),Default(1)
-\#PROMPT('Prompt Text',Procedure),%Symbol,At(10),Default(0)
-
-3rd Group - Pink
+### 3rd Group - Pink
 Prefix mode = Ticked
 These are the Clarion picture tokens. See Comment & Number below for more info.
+```
 @s @d @n @e @t
+```
 
-
-7th Group - Pale Yellow
+### 7th Group - Pale Yellow
 Prefix mode = Ticked
-You could probably get away with just the \#, but as all \#Commands have to start
+You could probably get away with just the \#, but as all template \#Commands have to start
 with a letter, this enforces that rule.
-
+```
 \#a \#b \#c \#d \#e \#f \#g \#h \#i \#j \#k \#l \#m \#n \#o \#p \#q \#r \#s \#t \#u \#v \#w \#x \#y \#z 
+```
 
-\#a \#b \#c \#d \#e \#f \#g \#h \#i \#j \#k \#l \#m \#n \#o \#p \#q \#r \#s \#t \#u \#v \#w \#x \#y \#z 
 
 This colours all Template symbols not listed in the Folders
 8th Group - Pale Mauve
